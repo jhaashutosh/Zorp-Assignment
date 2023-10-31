@@ -18,7 +18,7 @@
     justify-content: center;
   }
   .second-sidebar {
-    display: none;
+    border: none !important;
   }
   .options {
     margin-top: 10px;
@@ -43,5 +43,14 @@
   .logo,
   .user-image {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .table-footer {
+    font-size: 14px;
+  }
+  .page-number {
+    margin: auto 10px;
   }
 }
