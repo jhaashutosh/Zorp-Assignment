@@ -1,0 +1,61 @@
+/* Add this CSS to style the table footer */
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  bottom: 0;
+}
+
+.entries-info,
+.pagination,
+.show-entries {
+  display: flex;
+  align-items: center;
+}
+
+.pagination button,
+.show-entries select {
+  cursor: pointer;
+}
+
+#current-page {
+  border: 1px solid black;
+  padding: 2px 3px 2px 3px;
+}
+
+.page-number {
+  margin: auto 25px;
+}
+
+.entries-info,
+.pagination,
+.show-entries span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.show-entries select {
+  padding: 4px;
+  border: 1px solid rgba(47, 47, 47, 0.5);
+  border-radius: 2px;
+  font-size: 14px;
+  background: #fff;
+  position: relative;
+}
+
+.show-entries select option {
+  font-size: 14px;
+  background: #fff;
+  color: #333; /* Text color */
+  border: none;
+}
+
+.show-entries select::after {
+  content: "\25BC"; /* Unicode for a down-pointing triangle */
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust the spacing from the right side */
+  transform: translateY(-50%);
+  font-size: 12px; /* Adjust the size of the triangle */
+}

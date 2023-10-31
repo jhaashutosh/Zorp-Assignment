@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/Public/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/Public/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="section">
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/tik-tok.png" alt=""></div>
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/premiere-pro.png" alt="">
+                </div>
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/layer.png" alt=""></div>
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/edit.png" alt=""></div>
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/editing.png" alt=""></div>
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/play-button.png" alt="">
+                </div>
+            </div>
+            <div class="section">
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/recycle-sign.png" alt="">
+                </div>
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/settings.png" alt=""></div>
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/closed-book.png" alt="">
+                </div>
+                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/chatting.png" alt=""></div>
+                <div class="icon user-image" onclick="toggleSidebar()"><img src="/Public/assets/icons/profile_pic.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="second-sidebar">
+            <h2>Settings</h2>
+            <ul class="options">
+                <li>Project</li>
+                <li>API Access</li>
+                <li>Billing</li>
+                <li>Content Stages</li>
+                <li>Locales</li>
+                <li>Audit Logs</li>
+                <li>Team Members</li>
+            </ul>
+        </div>
+        <div class="main-window">
+            <h2>Audit Logs</h2>
+            <p>Monitor any changes made to your project, schema and content with audit logs.</p>
+            <p class="learn-more">Learn More<span class="learn-more-icon"><img
+                        src="/Public/assets/icons/external-link.svg" alt=""></span></p>
+            <div class="filter">
+                <div id="filter-icon"><img src="/Public/assets/icons/bars-filter.svg" alt=""></div>
+                <div class="text">Filter</div>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Entity Id</th>
+                        <th>Action</th>
+                        <th>Type</th>
+                        <th>Environment</th>
+                        <th>Time Stamp</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Table rows will be added here dynamically -->
+                </tbody>
+            </table>
+            <div class="table-footer">
+                <div class="entries-info">
+                    <span id="total-entries"></span>
+                </div>
+                <div class="pagination">
+                    <span id="prev-page">Previous</span>
+                    <span class="page-number">
+                        <span id="current-page">1</span>&nbsp;of&nbsp;<span id="total-pages">1</span>
+                    </span>
+                    <span id="next-page">Next</span>
+                </div>
+                <div class="show-entries">
+                    Show&nbsp;
+                    <select id="entries-per-page">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/Public/Js/footer.js"></script>
+<script src="/Public/Js/script.js"></script>
+
+</html>
