@@ -1,0 +1,47 @@
+@media screen and (max-width: 900px) {
+  .audit-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+  }
+  .section {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  .second-sidebar {
+    display: none;
+  }
+  .options {
+    margin-top: 10px;
+  }
+  .main-window {
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+  .navbar {
+    display: flex;
+  }
+  .section {
+    padding: 0px;
+    gap: 25px;
+  }
+  .sidebar {
+    display: none;
+    flex-direction: column;
+  }
+  .logo,
+  .user-image {
+    display: none;
+  }
+}

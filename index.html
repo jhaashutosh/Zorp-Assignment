@@ -2,15 +2,25 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Project</title>
     <link rel="stylesheet" type="text/css" href="/Public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="/Public/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/Public/css/responsiveness.css">
 </head>
 
 <body>
+    <div class="navbar">
+        <div class="menu-btn" onclick="toggleMenuBar()">&#9776;</div>
+        <!-- &#9776; is the Unicode for the hamburger icon -->
+        <h3><img src="/Public/assets/icons/profile_pic.png" alt=""></h3>
+    </div>
     <div class="container">
         <div class="sidebar">
             <div class="section">
-                <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/tik-tok.png" alt=""></div>
+                <div class="icon logo" onclick="toggleSidebar()"><img src="/Public/assets/icons/tik-tok.png" alt="">
+                </div>
                 <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/premiere-pro.png" alt="">
                 </div>
                 <div class="icon" onclick="toggleSidebar()"><img src="/Public/assets/icons/layer.png" alt=""></div>
@@ -52,21 +62,23 @@
                 <div id="filter-icon"><img src="/Public/assets/icons/bars-filter.svg" alt=""></div>
                 <div class="text">Filter</div>
             </div>
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>User</th>
-                        <th>Entity Id</th>
-                        <th>Action</th>
-                        <th>Type</th>
-                        <th>Environment</th>
-                        <th>Time Stamp</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                    <!-- Table rows will be added here dynamically -->
-                </tbody>
-            </table>
+            <div class="audit-table">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Entity Id</th>
+                            <th>Action</th>
+                            <th>Type</th>
+                            <th>Environment</th>
+                            <th>Time Stamp</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Table rows will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
             <div class="table-footer">
                 <div class="entries-info">
                     <span id="total-entries"></span>
