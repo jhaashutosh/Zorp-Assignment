@@ -1,14 +1,20 @@
 let sidebarOpen = false;
 let secondSidebarOpen = false;
+const sidebar = document.querySelector(".sidebar");
 
 function toggleMenuBar() {
-  const sidebar = document.querySelector(".sidebar");
   if (sidebarOpen) {
     sidebar.style.display = "none";
     sidebarOpen = false;
   } else {
     sidebar.style.display = "flex";
     sidebarOpen = true;
+    if (sidebarOpen) {
+      document.querySelector(".main-window").addEventListener("click", (e) => {
+        sidebar.style.display = "none";
+        sidebarOpen = false;
+      });
+    }
   }
 }
 

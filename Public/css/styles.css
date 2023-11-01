@@ -36,12 +36,21 @@ body {
 .sidebar {
   width: 70px;
   display: flex;
+  height: 100vh;
+  position: sticky;
+  z-index: 1000;
+  background-color: #fff;
+  top: 0;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   transition: width 0.8s;
   overflow: hidden;
   border: 1px solid rgba(47, 47, 47, 0.2);
+}
+
+.sub-menu {
+  display: none;
 }
 
 .section {
@@ -152,7 +161,7 @@ h2 {
 /* Table */
 
 .audit-table {
-  max-height: 60vh !important;
+  max-height: 110vh !important;
   overflow-y: auto;
 }
 .data-table {
