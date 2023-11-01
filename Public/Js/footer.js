@@ -1,3 +1,11 @@
+document.querySelector(".next-page").addEventListener("mouseover", (e) => {
+  e.target.style.color = "blue";
+});
+
+document.querySelector(".next-page").addEventListener("mouseout", (e) => {
+  e.target.style.color = "black";
+});
+
 const actionColors = {
   Create: "#728d8b",
   Update: "#87a0e0",
@@ -97,10 +105,12 @@ fetch("/data/sampleData.json")
   .then((data) => {
     sampleData = data;
     initTable();
+    document.querySelector(".prev-page").classList.add("disable-btn");
   })
   .catch((error) => console.error("Error loading data:", error));
 
 let currentPage = 1;
+// document.querySelector(".prev-page").style.color = "#bcc2ca";
 let entriesPerPage = 10; // Initial entries per page
 
 // Function to populate the table
@@ -126,6 +136,15 @@ function populateTable(entries) {
 function updatePageInfo() {
   const totalEntries = sampleData.length;
   const totalPages = Math.ceil(totalEntries / entriesPerPage);
+  if (totalPages == 1) {
+    document.querySelector(".prev-page").classList.remove("hover");
+    document.querySelector(".prev-page").classList.add("disable-btn");
+    document.querySelector(".next-page").classList.remove("hover");
+    document.querySelector(".next-page").classList.add("disable-btn");
+  } else {
+    document.querySelector(".next-page").classList.add("hover");
+    document.querySelector(".next-page").classList.remove("disable-btn");
+  }
 
   document.getElementById("current-page").textContent = currentPage;
   document.getElementById("total-pages").textContent = totalPages;
@@ -135,6 +154,8 @@ function updatePageInfo() {
 
 // Function to handle previous page navigation
 function prevPage() {
+  const totalEntries = sampleData.length;
+  const totalPages = Math.ceil(totalEntries / entriesPerPage);
   if (currentPage > 1) {
     currentPage--;
     const startIndex = (currentPage - 1) * entriesPerPage;
@@ -143,16 +164,27 @@ function prevPage() {
     populateTable(pageData);
     updatePageInfo();
   }
-  if (currentPage === 1) {
-    document.querySelector("#prev-page").style.color = "#bcc2ca";
-    document.querySelector("#prev-page").addEventListener("mouseover", (e) => {
-      e.target.style.color = "#bcc2ca";
-    });
+  if (currentPage === 1 || totalPages === 1) {
+    document.querySelector(".prev-page").classList.add("disable-btn");
+    if (document.querySelector(".prev-page").classList.contains("hover")) {
+      document.querySelector(".prev-page").classList.remove("hover");
+    }
+  } else {
+    if (
+      document.querySelector(".prev-page").classList.contains("disable-btn")
+    ) {
+      document.querySelector(".prev-page").classList.remove("disable-btn");
+    }
+    document.querySelector(".prev-page").classList.add("hover");
   }
-  document.querySelector("#next-page").style.color = "black";
-  document.querySelector("#next-page").addEventListener("mouseover", (e) => {
-    e.target.style.color = "blue";
-  });
+  if (
+    document.querySelector(".next-page").classList.contains("disable-btn") &&
+    totalPages != 1
+  ) {
+    document.querySelector(".next-page").classList.remove("disable-btn");
+  }
+  if (totalPages != 1)
+    document.querySelector(".next-page").classList.add("hover");
 }
 
 // Function to handle next page navigation
@@ -165,19 +197,28 @@ function nextPage() {
     const endIndex = startIndex + entriesPerPage;
     const pageData = sampleData.slice(startIndex, endIndex);
     populateTable(pageData);
-    document.querySelector("#next-page").style.color = "black";
     updatePageInfo();
   }
-  if (currentPage === totalPages) {
-    document.querySelector("#next-page").style.color = "#bcc2ca";
-    document.querySelector("#next-page").addEventListener("mouseover", (e) => {
-      e.target.style.color = "#bcc2ca";
-    });
+  if (currentPage === totalPages || totalPages === 1) {
+    document.querySelector(".next-page").classList.add("disable-btn");
+    if (document.querySelector(".next-page").classList.contains("hover")) {
+      document.querySelector(".next-page").classList.remove("hover");
+    }
+  } else {
+    if (
+      document.querySelector(".next-page").classList.contains("disable-btn")
+    ) {
+      document.querySelector(".next-page").classList.remove("disable-btn");
+    }
   }
-  document.querySelector("#prev-page").style.color = "black";
-  document.querySelector("#prev-page").addEventListener("mouseover", (e) => {
-    e.target.style.color = "blue";
-  });
+  if (
+    document.querySelector(".prev-page").classList.contains("disable-btn") &&
+    totalPages != 1
+  ) {
+    document.querySelector(".prev-page").classList.remove("disable-btn");
+  }
+  if (totalPages != 1)
+    document.querySelector(".prev-page").classList.add("hover");
 }
 
 // Example function to handle changing the number of entries per page
@@ -193,8 +234,8 @@ function changeEntriesPerPage() {
 }
 
 // Set up event listeners
-document.getElementById("prev-page").addEventListener("click", prevPage);
-document.getElementById("next-page").addEventListener("click", nextPage);
+document.querySelector(".prev-page").addEventListener("click", prevPage);
+document.querySelector(".next-page").addEventListener("click", nextPage);
 document
   .getElementById("entries-per-page")
   .addEventListener("change", changeEntriesPerPage);

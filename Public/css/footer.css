@@ -13,14 +13,17 @@
   align-items: center;
 }
 
-#prev-page {
-  color: #bcc2ca;
+.next-page:hover,
+.prev-page:hover {
+  cursor: pointer;
 }
 
-#next-page:hover,
-#prev-page:hover {
-  cursor: pointer;
-  color: blue;
+.hover:hover {
+  color: blue !important;
+}
+
+.disable-btn {
+  color: #bcc2ca !important;
 }
 
 #current-page {

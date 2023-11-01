@@ -101,7 +101,8 @@ h2 {
 
 .filter {
   margin-top: 30px;
-  width: 70%;
+  margin-bottom: 20px;
+  width: 67%;
   display: flex;
   background-color: white;
   border: 2px solid #ededf3;
@@ -156,7 +157,6 @@ h2 {
 }
 .data-table {
   width: 100%;
-  margin: 20px auto;
   text-align: left;
   border-collapse: collapse;
   position: relative;

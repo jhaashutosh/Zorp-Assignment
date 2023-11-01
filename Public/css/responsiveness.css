@@ -19,6 +19,7 @@
   }
   .second-sidebar {
     border: none !important;
+    display: none;
   }
   .options {
     margin-top: 10px;
@@ -31,14 +32,36 @@
 @media only screen and (max-width: 572px) {
   .navbar {
     display: flex;
+    position: sticky;
+    top: -1px;
+    z-index: 999;
   }
   .section {
     padding: 0px;
     gap: 25px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container {
+    position: relative;
   }
   .sidebar {
     display: none;
+    position: fixed;
+    top: 71px;
     flex-direction: column;
+    background-color: #333;
+    opacity: 0.95;
+    height: 100%;
+    gap: 25px;
+    margin-top: -2px;
+    width: 12%;
+    z-index: 999;
+    justify-content: flex-start;
+    padding: 20px 0px;
+  }
+  .icon img {
+    filter: brightness(0) invert(1);
   }
   .logo,
   .user-image {
