@@ -58,15 +58,15 @@
 .show-entries select option {
   font-size: 14px;
   background: #fff;
-  color: #333; /* Text color */
+  color: #333;
   border: none;
 }
 
 .show-entries select::after {
-  content: "\25BC"; /* Unicode for a down-pointing triangle */
+  content: "\25BC";
   position: absolute;
   top: 50%;
-  right: 10px; /* Adjust the spacing from the right side */
+  right: 10px;
   transform: translateY(-50%);
-  font-size: 12px; /* Adjust the size of the triangle */
+  font-size: 12px;
 }

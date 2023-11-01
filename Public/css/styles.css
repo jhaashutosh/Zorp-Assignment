@@ -204,6 +204,14 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   background-color: #e5e7ee;
+  max-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-table td button:hover {
+  max-width: none;
 }
 
 .data-table td button.update {

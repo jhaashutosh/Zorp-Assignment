@@ -1,11 +1,3 @@
-document.querySelector(".next-page").addEventListener("mouseover", (e) => {
-  e.target.style.color = "blue";
-});
-
-document.querySelector(".next-page").addEventListener("mouseout", (e) => {
-  e.target.style.color = "black";
-});
-
 const actionColors = {
   Create: "#728d8b",
   Update: "#87a0e0",
@@ -110,8 +102,7 @@ fetch("/data/sampleData.json")
   .catch((error) => console.error("Error loading data:", error));
 
 let currentPage = 1;
-// document.querySelector(".prev-page").style.color = "#bcc2ca";
-let entriesPerPage = 10; // Initial entries per page
+let entriesPerPage = 10;
 
 // Function to populate the table
 function populateTable(entries) {
@@ -132,7 +123,6 @@ function populateTable(entries) {
   });
 }
 
-// Example function to update the page and total page counters
 function updatePageInfo() {
   const totalEntries = sampleData.length;
   const totalPages = Math.ceil(totalEntries / entriesPerPage);
@@ -221,7 +211,7 @@ function nextPage() {
     document.querySelector(".prev-page").classList.add("hover");
 }
 
-// Example function to handle changing the number of entries per page
+// function to handle changing the number of entries per page
 function changeEntriesPerPage() {
   const select = document.getElementById("entries-per-page");
   entriesPerPage = parseInt(select.value, 10);
@@ -233,7 +223,6 @@ function changeEntriesPerPage() {
   updatePageInfo();
 }
 
-// Set up event listeners
 document.querySelector(".prev-page").addEventListener("click", prevPage);
 document.querySelector(".next-page").addEventListener("click", nextPage);
 document

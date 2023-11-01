@@ -1,431 +1,236 @@
 [
   {
-    "name": "User 1",
-    "entityId": "001",
-    "action": "Update",
-    "type": "Type A",
-    "environment": "Production",
+    "name": "John Smith",
+    "entityId": "g4hj2k9e1q2w3e4r",
+    "action": "Publish",
+    "type": "Model",
+    "environment": "Development",
     "timeStamp": {
-      "date": "2 Jan 2023",
-      "time": "14:30"
+      "date": "28 Oct 2022",
+      "time": "13:45"
     },
     "designation": "Manager",
     "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
   },
   {
-    "name": "User 2",
-    "entityId": "002",
-    "action": "Create",
-    "type": "Type B",
-    "environment": "Development",
+    "name": "Alice Johnson",
+    "entityId": "3e1b6a8d1q2w3e4r",
+    "action": "Update",
+    "type": "Webhook",
+    "environment": "Production",
     "timeStamp": {
-      "date": "3 Jan 2023",
-      "time": "10:45"
+      "date": "12 Dec 2022",
+      "time": "09:30"
     },
     "designation": "Lead",
     "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
   },
   {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
+    "name": "Emily Davis",
+    "entityId": "7f2i3l9p1q2w3e4r",
     "action": "Unpublish",
-    "type": "Type C",
-    "environment": "Production",
+    "type": "Content",
+    "environment": "Staging",
     "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
+      "date": "05 Nov 2022",
+      "time": "16:15"
     },
     "designation": "Developer",
     "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
   },
   {
-    "name": "User 3",
-    "entityId": "003",
+    "name": "Michael Wilson",
+    "entityId": "x8zc6v2a1q2w3e4r",
     "action": "Delete",
-    "type": "Type C",
+    "type": "Webhook",
     "environment": "Production",
     "timeStamp": {
-      "date": "4 Jan 2023",
+      "date": "19 Sep 2022",
+      "time": "14:00"
+    },
+    "designation": "Manager",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Sarah Brown",
+    "entityId": "k3yr9p6i1q2w3e4r",
+    "action": "Create",
+    "type": "Content",
+    "environment": "Staging",
+    "timeStamp": {
+      "date": "24 Feb 2023",
+      "time": "11:25"
+    },
+    "designation": "Lead",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Daniel Lee",
+    "entityId": "4m0e5r7y1q2w3e4r",
+    "action": "Publish",
+    "type": "Model",
+    "environment": "Production",
+    "timeStamp": {
+      "date": "17 Nov 2022",
+      "time": "08:55"
+    },
+    "designation": "Lead",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Olivia Taylor",
+    "entityId": "j1k0d9e4q2w3e4r",
+    "action": "Update",
+    "type": "Webhook",
+    "environment": "Staging",
+    "timeStamp": {
+      "date": "02 Apr 2023",
+      "time": "15:20"
+    },
+    "designation": "Developer",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "James Anderson",
+    "entityId": "l6w9s3x0q2w3e4r",
+    "action": "Create",
+    "type": "Model",
+    "environment": "Production",
+    "timeStamp": {
+      "date": "23 Aug 2022",
+      "time": "12:10"
+    },
+    "designation": "Manager",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Sophia Garcia",
+    "entityId": "y5z4k8c6q2w3e4r",
+    "action": "Unpublish",
+    "type": "Content",
+    "environment": "Development",
+    "timeStamp": {
+      "date": "14 Mar 2023",
+      "time": "07:40"
+    },
+    "designation": "Lead",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Liam Martinez",
+    "entityId": "e1h8j2b9q2w3e4r",
+    "action": "Delete",
+    "type": "Content",
+    "environment": "Staging",
+    "timeStamp": {
+      "date": "31 Jan 2023",
+      "time": "10:50"
+    },
+    "designation": "Developer",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Ava Rodriguez",
+    "entityId": "r7u5w0n2q2w3e4r",
+    "action": "Update",
+    "type": "Model",
+    "environment": "Production",
+    "timeStamp": {
+      "date": "08 May 2023",
+      "time": "17:05"
+    },
+    "designation": "Manager",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Logan Hernandez",
+    "entityId": "n4t3q9k1q2w3e4r",
+    "action": "Create",
+    "type": "Webhook",
+    "environment": "Development",
+    "timeStamp": {
+      "date": "09 Feb 2023",
+      "time": "18:35"
+    },
+    "designation": "Lead",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Ella Miller",
+    "entityId": "a8d6c4e3q2w3e4r",
+    "action": "Delete",
+    "type": "Model",
+    "environment": "Staging",
+    "timeStamp": {
+      "date": "26 Jul 2022",
+      "time": "16:55"
+    },
+    "designation": "Developer",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Mason Walker",
+    "entityId": "6z2a8c0h1q2w3e4r",
+    "action": "Publish",
+    "type": "Content",
+    "environment": "Production",
+    "timeStamp": {
+      "date": "04 Apr 2023",
+      "time": "14:30"
+    },
+    "designation": "Lead",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Amelia White",
+    "entityId": "f5x7w4v8q2w3e4r",
+    "action": "Update",
+    "type": "Webhook",
+    "environment": "Staging",
+    "timeStamp": {
+      "date": "20 Jun 2022",
+      "time": "12:40"
+    },
+    "designation": "Manager",
+    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+  },
+  {
+    "name": "Jackson Hall",
+    "entityId": "m7o2v4p9q2w3e4r",
+    "action": "Create",
+    "type": "Content",
+    "environment": "Development",
+    "timeStamp": {
+      "date": "30 Mar 2023",
       "time": "09:15"
     },
     "designation": "Developer",
     "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
   },
   {
-    "name": "User 3",
-    "entityId": "003",
+    "name": "Avery Lopez",
+    "entityId": "c5e6r7u2q2w3e4r",
     "action": "Publish",
-    "type": "Type C",
+    "type": "Model",
     "environment": "Production",
     "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
+      "date": "11 Oct 2022",
+      "time": "10:35"
     },
-    "designation": "Developer",
+    "designation": "Lead",
     "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
   },
   {
-    "name": "User 3",
-    "entityId": "003",
+    "name": "Ashutosh Jha",
+    "entityId": "c5e6r7u2q2w3e4r",
     "action": "Publish",
-    "type": "Type C",
+    "type": "Model",
     "environment": "Production",
     "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
+      "date": "01 Nov 2023",
+      "time": "10:35"
     },
     "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
-  },
-  {
-    "name": "User 3",
-    "entityId": "003",
-    "action": "Publish",
-    "type": "Type C",
-    "environment": "Production",
-    "timeStamp": {
-      "date": "4 Jan 2023",
-      "time": "09:15"
-    },
-    "designation": "Developer",
-    "profile-url": "https://i.pinimg.com/236x/da/fd/f2/dafdf25168edcb2f0e1d8702797946cc.jpg"
+    "profile-url": "/Public/assets/profile-images/profile_pic.png"
   }
 ]
