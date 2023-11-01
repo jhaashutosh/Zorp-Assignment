@@ -272,13 +272,15 @@ h2 {
   justify-content: center;
   align-items: flex-start;
 }
-.data-table td .timestamp:hover .view-detail {
+.data-table tr:hover .timestamp .view-detail {
   display: inline;
 }
-.data-table td .timestamp:hover .time {
+
+.data-table tr:hover .timestamp .time {
   display: none;
 }
-.data-table td .timestamp:hover .date {
+
+.data-table tr:hover .timestamp .date {
   display: none;
 }
 
