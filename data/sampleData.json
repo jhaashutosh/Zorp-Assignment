@@ -41,7 +41,7 @@
   {
     "name": "User 3",
     "entityId": "003",
-    "action": "Publish",
+    "action": "Unpublish",
     "type": "Type C",
     "environment": "Production",
     "timeStamp": {
@@ -54,7 +54,7 @@
   {
     "name": "User 3",
     "entityId": "003",
-    "action": "Publish",
+    "action": "Delete",
     "type": "Type C",
     "environment": "Production",
     "timeStamp": {

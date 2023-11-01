@@ -13,14 +13,19 @@
   align-items: center;
 }
 
-.pagination button,
-.show-entries select {
+#prev-page {
+  color: #bcc2ca;
+}
+
+#next-page:hover,
+#prev-page:hover {
   cursor: pointer;
+  color: blue;
 }
 
 #current-page {
-  border: 1px solid black;
-  padding: 2px 3px 2px 3px;
+  border: 1px solid rgba(47, 47, 47, 0.5);
+  padding: 4px 10px;
 }
 
 .page-number {
@@ -32,6 +37,10 @@
 .show-entries span {
   margin-right: 10px;
   cursor: pointer;
+}
+
+.entries-info {
+  color: grey;
 }
 
 .show-entries select {

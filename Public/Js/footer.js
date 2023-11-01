@@ -1,8 +1,8 @@
 const actionColors = {
-  Create: "green",
-  Update: "blue",
-  Publish: "green",
-  Unpublish: "red",
+  Create: "#728d8b",
+  Update: "#87a0e0",
+  Publish: "#869f9b",
+  Unpublish: "#c0a389",
   Delete: "red",
 };
 
@@ -143,6 +143,16 @@ function prevPage() {
     populateTable(pageData);
     updatePageInfo();
   }
+  if (currentPage === 1) {
+    document.querySelector("#prev-page").style.color = "#bcc2ca";
+    document.querySelector("#prev-page").addEventListener("mouseover", (e) => {
+      e.target.style.color = "#bcc2ca";
+    });
+  }
+  document.querySelector("#next-page").style.color = "black";
+  document.querySelector("#next-page").addEventListener("mouseover", (e) => {
+    e.target.style.color = "blue";
+  });
 }
 
 // Function to handle next page navigation
@@ -155,8 +165,19 @@ function nextPage() {
     const endIndex = startIndex + entriesPerPage;
     const pageData = sampleData.slice(startIndex, endIndex);
     populateTable(pageData);
+    document.querySelector("#next-page").style.color = "black";
     updatePageInfo();
   }
+  if (currentPage === totalPages) {
+    document.querySelector("#next-page").style.color = "#bcc2ca";
+    document.querySelector("#next-page").addEventListener("mouseover", (e) => {
+      e.target.style.color = "#bcc2ca";
+    });
+  }
+  document.querySelector("#prev-page").style.color = "black";
+  document.querySelector("#prev-page").addEventListener("mouseover", (e) => {
+    e.target.style.color = "blue";
+  });
 }
 
 // Example function to handle changing the number of entries per page
